@@ -753,7 +753,7 @@ MEDIA QUERIES
 	}
 }
 
-@media (max-height: 850px){
+@media (max-height: 900px){
 	.html, .body{
 		height: auto;
 	}
