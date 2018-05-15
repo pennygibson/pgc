@@ -268,10 +268,6 @@ Main Content
 .contentWrapper{
 	box-shadow: 0 4px 2px -2px #ddd;
 }
-/*.content1:hover, .content2:hover, .content3:hover{
-    box-shadow: 0 0 12px grey;
-    border: 1px solid #d3d3d3;
-} */
 
 .keywords{
 	display: flex;
@@ -319,7 +315,7 @@ footer{
 }
 /****************************
 CONTACT PAGE
-******************************/
+
 
 .contactCard{
     max-width: 700px;
@@ -337,7 +333,7 @@ CONTACT PAGE
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 2fr;
-}  /*this puts the icon images and p's on the same line'*/
+}  
 .contact img {
     max-width: 40px;
 	
@@ -368,6 +364,69 @@ CONTACT PAGE
 .navContact{
 	margin-bottom: 5%;
 }
+****************************/
+
+.contactContent{
+	border-radius: 10px;
+	display: flex;
+	padding: 3rem;
+	width: 60%;
+	margin: 3rem auto;
+	box-shadow: 0 0 10px #ddd;
+}
+.contactCard{
+	background-color: black;
+	border-radius: 10px;
+	padding: 3rem;
+    color: white;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	
+}
+
+.contact1{
+	align-self: center;
+}
+.contact2{
+	align-self:center;
+}
+
+.contactHeader{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 60%;
+}
+.contactHeader img{
+	align-self: center;
+}
+.contactHeader h2, .contactHeader p{
+	text-align: center;
+}
+
+.contact{
+	display: flex; 
+	padding-top: 1.3rem;
+	padding-bottom: 1.3rem;
+}
+
+.contact img{
+	max-width: 40px;
+	margin-right: 10px;
+	align-self: center;
+}
+
+
+
+@media (max-width: 600px){
+	.contactContent{
+		width: 94%;
+		padding: 1rem .1rem;
+	}
+}
+
+
 
 
 /****************************
@@ -508,7 +567,7 @@ button:focus {
 /****************************************
 ABOUT PAGE
 ******************************************/
-.videoContainer{
+/*.videoContainer{
 	display:flex;
 	max-width: 80%;
 	margin: 0 auto;
@@ -525,7 +584,7 @@ video#bgvid {
 .aboutMe{
 	align-self:center;
 	padding-right: 20px;
-}
+} */
 /***** sticky footer ******/
 .html, .body{
 	height: 100%;
@@ -544,15 +603,7 @@ footer{
 /**********************
 MEDIA QUERIES
 ************************/
-@media (max-width: 1320px){
-    .divider{
-        justify-content:center;
-        width: 100%;
-        min-width: 0;
-        min-height: 0;
-        overflow: hidden;
-    }
-}
+
 @media (max-width: 1024px){
     .headerText h3{
     font-size: 1em;
@@ -646,13 +697,6 @@ MEDIA QUERIES
 	.cafe{
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	.contactCard{
-		max-width: 94%;
-		
-	}
-	.contact img{
-		max-width: 20px;
-	}
 
 }
 
@@ -664,6 +708,9 @@ MEDIA QUERIES
         flex-direction: column;
         justify-content: center;
     }
+	.contactContent{
+		width: 80%;
+	}
     
 }
 
@@ -751,9 +798,7 @@ MEDIA QUERIES
 	.keywords{
 		display: none;
 	}
-	.contactCard{
-		margin-bottom: 20px;
-	}
+	
 }
 @media (max-width: 600px){
 	.wrapper{
@@ -790,23 +835,24 @@ MEDIA QUERIES
     .content1, .content2, .content3{
         margin-top: 0;
     }
-	.contactCard{
-		grid-template-columns: 1fr 2fr;
+	.contactContent{
+		margin: 1rem auto;
 	}
-	.contact1 img{
-		max-width: 40px;
+
+	.contactCard{
+		flex-direction:column;
+		padding: 1rem;
+	}
+	.contactHeader{
+		width: 100%;
 	}
 	.contact1 h2{
-		text-align: center;
 		font-size: 1em
 	}
 	.contact1 p{
 		font-size: .7em;
-		text-align:center;
 	}
-	.contact2 p{
-		padding-right:4px;
-	}
+	
 }
 
 @media (max-width: 400px){
@@ -822,7 +868,7 @@ MEDIA QUERIES
 	}
 }
 
-@media (max-height: 720px){
+@media (max-height: 850px){
 	.html, .body{
 		height: auto;
 	}
