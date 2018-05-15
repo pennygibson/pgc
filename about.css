@@ -1,37 +1,18 @@
-body {
-  margin: 0;
-  background: #000; 
-} 
-video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-  	background-size: cover;
-  	transition: 1s opacity;
-}
-.stopfade { 
-   opacity: .5;
-}
+
 
 #polina { 
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:100; 
-  background: rgba(0,0,0,0.3);
-  color: white;
   padding: 2rem;
   width: 100%;
   font-size: 1.2rem;
 }
 .insidePolina{
-	width: 44%;
+	width: 60%;
+	margin: 0 auto;
 	padding: 2rem;
-	background: rgba(0,0,0,0.4);
+	color: #4a4a4a;
+	box-shadow: 0 0 10px #ddd;
 }
 
 h1 {
@@ -39,15 +20,14 @@ h1 {
   text-transform: uppercase;
   margin-top: 0;
   letter-spacing: .3rem;
+  color: black;
 }
 
 @media screen and (max-width: 500px) { 
   
 }
 @media screen and (max-width: 800px) {
-	body{
-		background-color: white;
-	}
+	
 	#polina{
 		background-color:white;
 	}
@@ -61,7 +41,6 @@ h1 {
 		box-shadow: 0 0 10px #ddd;
 	}
 	.insidePolina h1{
-		color:black;
 		font-size: 1.8em;
 	}
 	
