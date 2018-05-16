@@ -282,7 +282,6 @@ footer{
 }
 .footerIcons img{
     align-self:center;
-    max-height: 50px;
     margin: 10px 30px;
 }
 .copyright{
@@ -355,7 +354,9 @@ a[href^="tel"]{
 /****************************
 PREVIOUS WORK PAGE
 ******************************/
-
+.mobile{
+	display: none;
+}
 .darkSection{
 	box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 	background-color: #fafafa;
@@ -618,6 +619,12 @@ MEDIA QUERIES
     }
     .cafe{
 		flex-direction:column;
+	}
+	.full{
+		display: none;
+	}
+	.mobile{
+		display: block;
 	}
 	.desktop, .tablet, .phoneSize{
 		max-width: 90%;
