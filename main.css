@@ -657,7 +657,7 @@ MEDIA QUERIES
 		font-size: 1.2em;
 	}
 	p{
-		font-size: .8em;
+		font-size: .9em;
 	}
     .mainHeader{
         display: none;
@@ -747,6 +747,7 @@ MEDIA QUERIES
 	
 }
 
+
 @media (max-width: 400px){
     .siteName{
         font-size: 1.2em;
@@ -765,6 +766,8 @@ MEDIA QUERIES
 		height: auto;
 	}
 }
+
+
 
 
 

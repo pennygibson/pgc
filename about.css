@@ -4,15 +4,41 @@
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:100; 
   padding: 2rem;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
 }
 .insidePolina{
-	width: 60%;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 3rem;
 	color: #4a4a4a;
 	box-shadow: 0 0 10px #ddd;
+	
+}
+
+.aboutPics{
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+}
+.aboutPics img{
+	max-width: 250px;
+}
+.pic1{
+	position: relative;
+	text-align: center;
+	color: white;
+	
+}
+.pic1Text{
+	margin-bottom:0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 20px 5px;
 }
 
 h1 {
@@ -22,29 +48,42 @@ h1 {
   letter-spacing: .3rem;
   color: black;
 }
-
-@media screen and (max-width: 500px) { 
-  
+@media screen and (max-width:900px) {
+	#polina{
+		width: 100%;
+		padding: 1rem;
+	}
+	.aboutPics{
+		margin-left:10px;
+	}
 }
+
 @media screen and (max-width: 800px) {
 	
 	#polina{
 		background-color:white;
 	}
-  #bgvid {
-	  display: none;
-	}
+
 	.insidePolina{
 		width:100%;
-		background: white;
-		color: #4a4a4a;
-		box-shadow: 0 0 10px #ddd;
+		padding:1rem;
 	}
 	.insidePolina h1{
 		font-size: 1.8em;
 	}
 	
 }
+
+@media screen and (max-width: 550px) { 
+	#polina{
+		flex-direction:column;
+		justify-content: center;
+	}
+	.aboutPics{
+	  margin: 0 auto;
+	}
+	
+
 
 
 
