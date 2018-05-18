@@ -278,7 +278,7 @@ footer{
 }
 .footerIcons{
     align-self: center;
-	padding-top: 20px;
+	padding: 20px 0;
 }
 .footerIcons img{
     align-self:center;
@@ -289,8 +289,25 @@ footer{
 }
 .copyright p{
 	font-size: .7em;
-	color: white;
 	padding: 0 6px;
+	color: #9b9b9b;
+}
+
+ul.nav.footerNavlinks{
+	justify-content: space-between;
+	padding: 12px;
+	list-style: none;
+	width: 100%;
+	display: none;
+	background-color: white;
+}
+ul.nav.footerNavlinks a{
+	color:#4a4a4a;
+	font-size: 1em;
+}
+
+ul.nav.footerNavlinks a:hover{
+	color: #9b9b9b;
 }
 /****************************
 CONTACT PAGE
@@ -723,7 +740,7 @@ MEDIA QUERIES
         max-width:83px;
     }
     .content1, .content2, .content3{
-        margin-top: 0;
+        flex: 1;
     }
 	.contactContent{
 		margin: 1rem auto;
@@ -743,6 +760,9 @@ MEDIA QUERIES
 	}
 	.contact1 p{
 		font-size: .7em;
+	}
+	ul.nav.footerNavlinks{
+		display: flex;
 	}
 	
 }
