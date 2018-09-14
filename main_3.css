@@ -128,7 +128,7 @@ HEADER
     grid-row: 2;
     grid-column: 1/7;
     font-size:2.2em;
-	padding-left: 60px;
+	padding-left: 20px;
 	align-self:end;
 }
 .social{
@@ -143,8 +143,7 @@ HEADER
 }
 .cards{
     grid-row:5;
-    grid-column:3/6;
-    padding-left:20px;
+    grid-column:2/6;
 }
 .copy{
     color:#E3E14E;
@@ -156,7 +155,8 @@ HEADER
 .keyword{
     color:#E3E14E;
     grid-row:6;
-    grid-column: 2/5;
+    grid-column: 1/5;
+	padding-left: 20px;
 }
 .email{
     color:#9b9b9b;
@@ -183,9 +183,8 @@ HEADER
 .content{
     color:#4AC8C7;
     grid-row: 9;
-    grid-column: 3/5;
+    grid-column: 2/5;
     font-size: 1.5em;
-    text-align:center;
 }
 .marketing{
     color:#9b9b9b;
@@ -285,7 +284,8 @@ footer{
     margin: 10px 30px;
 }
 .copyright{
-	text-align:right;
+	display: flex;
+	justify-content: space-between;
 }
 .copyright p{
 	font-size: .7em;
@@ -318,7 +318,7 @@ CONTACT PAGE
 	display: flex;
 	padding: 3rem;
 	width: 60%;
-	margin: 3rem auto;
+	margin: 1rem auto;
 	box-shadow: 0 0 10px #ddd;
 }
 .contactCard{
@@ -366,6 +366,11 @@ CONTACT PAGE
 a[href^="tel"]{
     color:inherit !important;
     text-decoration:none !important;
+}
+
+.map{
+	width: 94%;
+	margin: 0 auto;
 }
 
 /****************************
@@ -453,6 +458,11 @@ button:focus {
 .startHidden{
 	display: none;
 }
+
+#buttonOliver{
+	background-color: #2f2d27;
+	border: 1px solid #2f2d27;
+}
 #button1{
 	background-color: #acdd30;
 	border: 1px solid #acdd30;
@@ -484,6 +494,7 @@ button:focus {
     border: 1px #280f36 solid;
 	margin-bottom: 40px;
 }
+
 
 
 /***** sticky footer ******/
@@ -518,7 +529,7 @@ MEDIA QUERIES
     .design{
         grid-row: 1;
         grid-column: 1/5;
-}
+	}
     .social{
         grid-row: 2;
         grid-column: 5/7;
@@ -531,6 +542,7 @@ MEDIA QUERIES
     .cards{
         grid-row:4;
         grid-column:1/4;
+		text-align: center;
     }
     .copy{
         grid-row: 4;
@@ -562,7 +574,7 @@ MEDIA QUERIES
     }
     .content{
         grid-row: 8;
-        grid-column: 2/7;
+        grid-column: 4/7;
     }
     .marketing{
         grid-row: 9;
@@ -581,8 +593,7 @@ MEDIA QUERIES
     .contentCreation{
        color:#4AC8C7;
         grid-row: 12;
-        grid-column: 1/7;
-        padding-left: 20px;
+        grid-column: 3/7;
     }
     .tagline{
         grid-row: 14;
@@ -664,9 +675,6 @@ MEDIA QUERIES
 	.keywords p{
 		padding: 0;
 	}
-	.copyright{
-		text-align:center;
-	}
 }
 
 @media (max-width: 700px){
@@ -694,6 +702,10 @@ MEDIA QUERIES
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+	.copyright{
+		display: block;
+		text-align: center;
 	}
 	
 	.mainContent{

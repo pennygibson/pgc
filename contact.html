@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta description content="Contact Winnipeg website designer Penny Gibson. I build affordable sites for small businesses and also offer local SEO, online marketing, branding, social media, google adwords and copy writing">
         <link href="./normalize.css" rel="stylesheet">
-        <link href="./main_2.css" rel="stylesheet">
+        <link href="./main_3.css" rel="stylesheet">
         <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
     </head>
     <body class="body">
@@ -24,13 +24,17 @@
             </ul>
         </nav>
         
-        <div class="contactContent contentWrapper">
+        <div class="contactContent contentWrapper" itemscope itemtype="http://schema.org/LocalBusiness">
+			<meta itemprop="MakesOffer" content="website designer">
+			<meta itemprop="MakesOffer" content="local SEO Servies">
+			<meta itemprop="MakesOffer" content="web developer">
             <div class="contactCard">
                 <div class="contact1">
-                <div class="contactHeader">
-                    <img src="images/websites-winnipeg.png" alt="logo for digital marketing agency in Winnipeg, MB">
-                    <h2>Penny Gibson Consulting</h2>
-                    <p>Don't worry. I'll take care of everything...</p>
+                <div class="contactHeader" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                    <img src="https://image.ibb.co/kmwcLU/websites_winnipeg.png" alt="logo for digital marketing agency in Winnipeg, MB" itemprop="url">
+					</div><div class="contactHeader">
+                    <h2 itemprop="name">Penny Gibson Consulting</h2>
+					<p>Small Business Sites &amp; Local SEO Packages <span itemprop="priceRange">$500 - $2000</span></p>
                 </div>
                 </div>
                 <div class="contact2">
@@ -40,20 +44,25 @@
                     </div>
                     <div class="phoneContact contact">
 						<a href="tel:1-204-330-3148"> <img src="images/email-list-building.png" alt="grow your business with a bigger email list"></a>
-                        <p>(204)330-3148</p>
+                        <p itemprop="telephone">(204)330-3148</p>
                     </div>
-                    <div class="mapContact contact">
+                    <div class="mapContact contact" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 						<a href="https://goo.gl/maps/u8cpSCupUAM2" target="_blank"><img src="images/digital-agency-winnipeg.png" alt="digital marketing agency and web developer in Manitoba"></a>
-                        <p>Winnipeg, MB</p>
+						<p><span itemprop="addressLocality">Winnipeg,</span><span itemprop="addressRegion">MB</span></p>
                     </div>
                     <div class="mapContact contact">
-						<a href="http://www.pennygibson.com" target="_blank"> <img src="images/affordable-websites.png" src="affordable websites for small business"></a>
+						<a itemprop="url" href="http://www.pennygibson.com" target="_blank"> <img src="images/affordable-websites.png" src="affordable websites for small business"></a>
                         <p>www.pennygibson.com</p>
                     </div>
                 </div>
                 
             </div>
+			
         </div>
+		<div class="contactContent contentWrapper">
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.527729809674!2d-97.16702812154229!3d49.87984963091546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d3da1a13aed1706!2sPenny+Gibson+Consulting!5e0!3m2!1sen!2sca!4v1536698515927" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+		</div>
        
          <footer>
 			<div class="keywords">
@@ -80,6 +89,7 @@
 			 </ul>
 		  	</div>
 			 <div class="copyright">
+				 <p>800 Wolseley Ave #202, Winnipeg, MB R3G 1C6</p>
 			 	<p>Copyright &copy; 2018 Penny Gibson Consulting. All rights reserved.</p>
 			 </div>
        </footer>
