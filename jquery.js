@@ -4,6 +4,9 @@ $(document).ready(function(){
     $('.yellow').delay(500).fadeIn(6000);
     $('.grey').delay(500).fadeIn(8000);
 	
+	$("#buttonOliver" ).click(function() {
+  $( ".oliver").slideToggle( 800 );
+});
 	$( "#button1" ).click(function() {
   $( ".section1").slideToggle( 800 );
 });
